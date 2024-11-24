@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Cart and Language</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-custom">
+        <!-- Left Links -->
+        <div class="nav-links">
+            <a href="#home">WOMEN</a>
+            <a href="#about">PLUS</a>
+            <a href="#services">MEN</a>
+            <a href="#contact">ACCESSORIES</a>
+        </div>
+
+        <!-- Centered Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="assets/Logo.png" alt="Logo" width="192.51" height="16">
+        </a>
+
+        <!-- Right Section: Cart and Language -->
+        <div class="navbar-right">
+            <!-- Cart Icon -->
+            <a href="#cart" aria-label="Cart">
+                <img src="assets/bx_bx-user.svg" alt="Cart Icon" width="20" height="20">
+            </a>
+            <!-- Cart Icon with Dropdown -->
+            <div class="dropdown">
+                <a href="#" id="cart-icon" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/bx_bx-shopping-bag.svg" alt="Cart Icon" width="24" height="24">
+                    <span id="cart-count">0</span> <!-- Cart item count -->
+                </a>
+                <ul class="dropdown-menu" id="cart-dropdown">
+                    <li><span id="cart-empty">Your cart is empty</span></li> <!-- Default message if cart is empty -->
+                </ul>
+            </div>
+            <a href="#cart" aria-label="Cart">
+                <img src="assets/bx_bx-heart.svg" alt="Cart Icon" width="20" height="20">
+            </a>
+            <a href="#cart" aria-label="Cart">
+                <img src="assets/bx_bx-support.svg" alt="Cart Icon" width="20" height="20">
+            </a>
+
+            <a href="#cart" aria-label="Cart">
+                <img src="assets/bx_bx-search.svg" alt="Cart Icon" width="20" height="20">
+            </a>
+
+            <!-- Language Dropdown -->
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/USFlag.svg" alt="English" class="flag-icon">
+                    <span class="ms-2">USD $</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li>
+                        <a class="dropdown-item" href="#en">
+                            <img src="assets/USFlag.svg" alt="English" class="flag-icon">USD $
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Benefits -->
+    <div class="benefits">
+        <div >
+            <img src="assets/bx_bx-crown.svg" alt="Cart Icon" width="30" height="30">
+                <span>Exclusive Deals for VIP 2 and up!</span>
+            </div>
+        <div >
+            <img src="assets/bx_bx-star.svg" alt="Cart Icon" width="30" height="30">
+                <span>Weekly New Arrivals</span>
+            </div>
+        <div >
+            <img src="assets/mdi_truck-delivery-outline.svg" alt="Cart Icon" width="30" height="30">
+                <span>Free Shipping On Orders Over $100</span>
+        </div>
+        <div >
+            <img src="assets/bx_bx-map-pin.svg" alt="Cart Icon" width="30" height="30">
+                <span>Track Your Order</span>
+            </div>
+         <div >
+                <img src="assets/bx_bx-purchase-tag.svg" alt="Cart Icon" width="30" height="30">
+            <span>10% Off On Your First Order!</span>
+         </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+        <img src="assets/Hero.jpg" alt="Hero"  width="1440" height="650">
+    </div>
+
+    <!-- Site wide deals -->
+    <div class="sitewide">
+        <div class="offer"> <div class="discount"> 
+            <div class="amount">$5</div> 
+            <div class="off">OFF</div> 
+        </div> <p class="details">ON ORDERS ABOVE $50</p> </div> 
+        <div class="offer"> 
+            <div class="discount"> 
+                <div class="amount">$15</div> 
+                <div class="off">OFF</div> 
+            </div> 
+            <p class="details">ON ORDERS ABOVE $75</p> 
+        </div> 
+        <div class="offer"> 
+            <div class="discount"> 
+                <div class="amount">$20</div> 
+                <div class="off">OFF</div> 
+            </div> 
+            <p class="details">ON ORDERS ABOVE $150</p> 
+        </div> 
+        <div class="offer"> 
+            <div class="discount"> 
+            <div class="amount">$30</div> 
+            <div class="off">OFF</div> 
+        </div> 
+        <p class="details">ON ORDERS ABOVE $200</p>
+     </div> 
+     <a href="#" class="button">CHECK OUT ALL SITE-WIDE DEALS</a>
+    </div>
+
+    <!-- VIP -->
+    <div class="vip">
+        <div class="blackfriday">
+            BLACK FRIDAY EXCLUSIVE
+        </div>
+        <div class="freeshipping">
+            FREE SHIPPING ON ALL ORDERS FOR <br/>VIP 2 AND UP!
+        </div>
+        <div>
+            <button class="shopnow">SHOP NOW</button>
+        </div>
+    </div>
+
+    <!-- Trending -->
+    <div class="trending">
+        <div class="trendheading">
+            Now Trending
+        </div>
+        <div class="subheading">
+            See what everyone’s wearing right now
+        </div>
+
+        <div class="container"> 
+            <div class="item"> 
+                <img src="./assets/Rectangle8.png" alt="Winter Fashion"> 
+                <p>WINTER FASHION</p> </div> 
+            <div class="item"> 
+                <img src="./assets/Rectangle1.png" alt="Boots"> 
+                <p>BOOTS</p> 
+            </div> 
+            <div class="item"> 
+                <img src="./assets/Rectangle2.png" alt="Night Out"> 
+                <p>NIGHT OUT</p> 
+            </div> 
+            <div class="item"> 
+                <img src="./assets/Rectangle3.png" alt="Holidays"> 
+                <p>HOLIDAYS</p> 
+            </div> 
+            <div class="item"> 
+                <img src="./assets/Rectangle4.png"" alt="Outerwear"> 
+                <p>OUTERWEAR</p> 
+            </div> 
+            <div class="item"> 
+                <img src="./assets/Rectangle5.png" alt="White Dresses"> 
+                <p>WHITE DRESSES</p> 
+            </div> <div class="item"> 
+                <img src="./assets/Rectangle6.png" alt="Sweaters"> 
+                <p>SWEATERS</p> 
+            </div> 
+            <div class="item"> 
+                <img src="./assets/Rectangle7.png" alt="Party"> 
+                <p>PARTY</p> 
+            </div> 
+        </div>
+
+        <div class="tagscontainer">
+            <div class="hashtag">#Thanksgiving</div> <div class="hashtag">#NewYears</div> <div class="hashtag">#Knitted</div> <div class="hashtag">#Pajamas</div> <div class="hashtag">#WFH</div> <div class="hashtag">#FallFashion
+        </div>
+    </div>
+
+
+    <!-- New Arivals -->
+    <div class="newarrivals">
+        <div class="newarrivals-content">
+            <div class="child-div1">
+               
+            </div>
+            <div class="child-div2 ">
+                <div class="newarrivals-header">NEW <br> ARRIVALS</div>
+                <div class="newarrivals-sub-heading">Get ready for the holidays with us!</div>
+
+                <div>
+                    <button class="shopnow">SHOP NOW</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+   
+
+    <!-- Recently Bought -->
+    <div class="trending">
+        <div class="trendheading">
+            Recently Bought
+        </div>
+
+        <div class="container-recently-bought">
+            <div class="item-recently-bought" data-id="1">
+                <img src="./assets/Recently1.png" alt="Winter Fashion">
+                <p>Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</p>
+                <div class="price">
+                    <div class="original-price">$38</div>
+                </div>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="item-recently-bought" data-id="2">
+                <img src="./assets/Recently2.png" alt="Boots">
+                <p>Chevron Flap Crossbody Bag</p>
+                <div class="price">
+                    <div class="sale-price">$5.77</div>
+                    <div class="original-price line-trough">$7.34</div>
+                </div>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="item-recently-bought" data-id="3">
+                <img src="./assets/Recently3.png" alt="Night Out">
+                <p>Manilla Tan Multi Plaid Oversized Fringe Scarf</p>
+                <div class="price">
+                    <div class="sale-price">$29</div>
+                    <div class="original-price line-trough">$39</div>
+                </div>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="item-recently-bought" data-id="4">
+                <img src="./assets/Recently4.png" alt="Holidays">
+                <p>Diamante Puff Sleeve Dress - Black</p>
+                <div class="price">
+                    <div class="original-price">$45.99</div>
+                </div>
+                <button class="buy-button">Buy</button>
+            </div>
+            <div class="item-recently-bought" data-id="5">
+                <img src="./assets/Recently5.png" alt="Outerwear">
+                <p>Banneth Open Front Formal Dress in Black</p>
+                <div class="price">
+                    <div class="sale-price">$69</div>
+                    <div class="original-price line-trough">$99.95</div>
+                </div>
+                <button class="buy-button">Buy</button>
+            </div>
+        </div>
+
+   
+    <!-- Inspo -->
+    <div class="inspo-main">
+        <div class="inspo-bg">
+        <div class="inspo-heading">
+            Your Next Inspo
+        </div>
+        <div class="subheading ">
+            Checkout who’s wearing what by using #THREADEDInspo on Instagram
+        </div>
+
+        <div class="container-recently-bought"> 
+            <div class="item-recently-bought"> 
+                <img src="./assets/Inspo10.png" alt="Winter Fashion"> 
+               
+            </div> 
+            <div class="item-recently-bought"> 
+                <img src="./assets/Inspo12.png" alt="Boots"> 
+                
+            </div> 
+            <div class="item-recently-bought"> 
+                <img src="./assets/Inspo13.png" alt="Night Out"> 
+                
+            </div> 
+            <div class="item-recently-bought"> 
+                <img src="./assets/Inspo14.png" alt="Holidays"> 
+               
+            </div> 
+            <div class="item-recently-bought"> 
+                <img src="./assets/Inspo11.png"" alt="Outerwear"> 
+                
+            </div> 
+        </div>
+        <div class="view-all-post">
+            <div class="view-all">
+                <a href="#" class="button">VIEW ALL POST</a>
+            </div>
+        </div>
+    </div>
+
+        <!-- Email -->
+        <div class="sign-up">
+            <div class="blackfriday">
+                SIGN UP FOR EXCLUSIVE DEALS AND UPDATES
+            </div>
+            
+            <div>
+                <div class="textbox-with-arrow">
+                    <input type="text" placeholder="Your Email Address" />
+                    <button>&rarr;</button>
+                </div>
+            </div>
+        </div>
+        
+    
+
+    <!--Footer-->
+    <div class="footer-main">
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-section">
+                <h4>Company Info</h4>
+                <ul>
+                  <li><a href="#">About THREADED</a></li>
+                  <li><a href="#">Affiliate</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h4>Help & Support</h4>
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">How To Order</a></li>
+                  <li><a href="#">How To Track</a></li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h4>Customer Care</h4>
+                <ul>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Payment Methods</a></li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                  <a href="#"><img src="./assets/bx_bxl-facebook.svg" alt="Facebook" /></a>
+                  <a href="#"><img src="./assets/bx_bxl-instagram.svg" alt="Instagram" /></a>
+                  <a href="#"><img src="./assets/bx_bxl-twitter.svg" alt="Twitter" /></a>
+                  <a href="#"><img src="./assets/bx_bxl-youtube.svg" alt="Youtube" /></a>
+                  <a href="#"><img src="./assets/bx_bxl-pinterest-alt.svg" alt="Pinterest" /></a>
+                  <a href="#"><img src="./assets/bx_bxl-tiktok.svg" alt="Tiktok" /></a>
+                </div>
+                <h4>We Accept</h4>
+                <div class="payment-icons">
+                  <img src="./assets/Payment1.png" alt="Visa" />
+                  <img src="./assets/Payment2.png" alt="MasterCard" />
+                  <img src="./assets/Payment3.png" alt="MasterCard" />
+                  <img src="./assets/Payment4.png" alt="PayPal" />
+                  <img src="./assets/Payment5.png" alt="PayPal" />
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>©2021 THREADED All Rights Reserved.</p>
+              <p class="brand"><img src="assets/Logo.png" alt="Logo" width="192.51" height="16"></p>
+            </div>
+          </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script>
+    // Cart data
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Update cart count in header
+    function updateCartCount() {
+        const cartCount = document.getElementById('cart-count');
+        cartCount.textContent = cart.length;
+    }
+
+    // Update cart dropdown
+    function updateCartDropdown() {
+    const cartDropdown = document.getElementById("cart-dropdown");
+    const cartEmpty = document.getElementById("cart-empty");
+
+    // Clear the dropdown menu
+    cartDropdown.innerHTML = "";
+
+    if (cart.length === 0) {
+        cartDropdown.appendChild(cartEmpty); // Show empty message if cart is empty
+    } else {
+        let totalPrice = 0; // Initialize total price
+
+        cart.forEach((item) => {
+        const listItem = document.createElement("li");
+        listItem.classList.add("dropdown-item");
+        listItem.innerHTML = `
+                    <div class="cart-item">
+                        <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+                        <div class="cart-item-details">
+                            <span>${item.name}</span>
+                            <span class="cart-item-price">${item.price}</span>
+                        </div>
+                        <button class="remove-btn" data-id="${item.id}">Remove</button>
+                    </div>
+                `;
+
+        // Add item price to total (convert price to a number by removing symbols)
+        totalPrice += parseFloat(item.price.replace(/[^0-9.]/g, ""));
+        cartDropdown.appendChild(listItem);
+        });
+
+        // Add a divider
+        const divider = document.createElement("hr");
+        cartDropdown.appendChild(divider);
+
+        // Display Total Price
+        const totalPriceContainer = document.createElement("div");
+        totalPriceContainer.classList.add("total-price-container");
+        totalPriceContainer.innerHTML = `
+        <span>Total:</span>
+        <span class="total-price">$${totalPrice.toFixed(2)}</span>
+        `;
+        cartDropdown.appendChild(totalPriceContainer);
+
+        // Add Checkout button
+        const checkoutButton = document.createElement("button");
+        checkoutButton.textContent = "Checkout";
+        checkoutButton.classList.add("checkout-btn");
+        checkoutButton.addEventListener("click", handleCheckout);
+        cartDropdown.appendChild(checkoutButton);
+    }
+    }
+
+    // Handle Checkout button click
+    function handleCheckout() {
+    alert("Proceeding to checkout with items: " + JSON.stringify(cart));
+    }
+
+    // Handle "Buy" button click
+    const buyButtons = document.querySelectorAll('.buy-button');
+    buyButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const itemId = this.closest('.item-recently-bought').dataset.id;
+            addToCart(itemId);
+        });
+    });
+
+    // Add item to cart
+    function addToCart(itemId) {
+        const item = {
+            id: itemId,
+            name: document.querySelector(`[data-id="${itemId}"] p`).textContent,
+            price: document.querySelector(`[data-id="${itemId}"] .sale-price`) 
+                ? document.querySelector(`[data-id="${itemId}"] .sale-price`).textContent 
+                : document.querySelector(`[data-id="${itemId}"] .original-price`).textContent,
+            image: document.querySelector(`[data-id="${itemId}"] img`).src
+        };
+
+        // Prevent adding duplicates
+        if (!cart.some(cartItem => cartItem.id === itemId)) {
+            cart.push(item);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+            updateCartDropdown();
+        }
+    }
+
+    // Remove item from cart
+    function removeFromCart(itemId) {
+        const index = cart.findIndex(item => item.id === itemId);
+        if (index !== -1) {
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+            updateCartDropdown();
+        }
+        
+    }
+
+    // Event listener for remove button in the dropdown
+    document.addEventListener('click', function(event) {
+        if (event.target && event.target.classList.contains('remove-btn')) {
+            const itemId = event.target.getAttribute('data-id');
+            removeFromCart(itemId);
+        }
+    });
+
+    // Initialize cart count and dropdown
+    updateCartCount();
+    updateCartDropdown();
+    </script>
+</body>
+</html>
